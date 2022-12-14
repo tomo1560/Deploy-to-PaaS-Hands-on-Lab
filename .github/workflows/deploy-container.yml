@@ -3,14 +3,14 @@ name: Deploy container
 on:
   workflow_dispatch:
     inputs:
-    resourceGroup:
-      description: 'リソース グループ名'
-      required: true
-      type: string
-    containerApp:
-      description: 'コンテナー アプリ名'
-      required: true
-      type: string
+      resourceGroup:
+        description: 'リソース グループ名'
+        required: true
+        type: string
+      containerApp:
+        description: 'コンテナー アプリ名'
+        required: true
+        type: string
 jobs:
   build:
     runs-on: ubuntu-latest
